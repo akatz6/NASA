@@ -1,7 +1,7 @@
 <template>
   <div id="currentLocationDiv">
     <img :src="location['url']"
-    id="currentLocationImage" class="">
+    id="currentLocationImage">
     <p id="currentLocationExplanation">A NASA image of
       latitude {{latitude}} and longitude {{longitude}}
       This is your current location
@@ -43,16 +43,15 @@ export default {
 
 #currentLocationDiv{
   padding-bottom: 100px;
+}
+#currentLocationImage{
+  width: 20%
+}
 
-  #currentLocationImage{
-    width: 20%
-  }
-
-  #currentLocationExplanation{
-    margin: 0 auto;
-    width: 20%;
-    margin-top: 2%;
-  }
+#currentLocationExplanation{
+  margin: 0 auto;
+  width: 20%;
+  margin-top: 2%;
 }
 
 
